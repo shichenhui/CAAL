@@ -1,9 +1,8 @@
 # CAAL
 
-The code is coming soon.
+The implementation of the paper **"Cross-Modal Inconsistency in Clustering: A Confidence-Aware Active Learning Framework"**. The code is coming soon.
 
-## Overview
-The implementation of the paper **"Cross-Modal Inconsistency in Clustering: A Confidence-Aware Active Learning Framework"**. 
+## Context
 
 In multimodal data clustering, one commonly overlooked challenge is the presence of **inconsistent semantic information** across different modalities. This inconsistency can significantly affect the overall clustering accuracy. Unsupervised methods, such as contrastive learning, often struggle to correctly distinguish the true categories of these samples due to the lack of prior knowledge.
 
