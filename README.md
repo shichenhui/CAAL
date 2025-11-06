@@ -1,15 +1,43 @@
 # CAAL
-The implementation of "Cross-Modal Inconsistency in Clustering: A Confidence-Aware Active Learning Framework"
 
-In the clustering of multimodal data, a prevalent yet commonly overlooked phenomenon is that certain samples exhibit inconsistent semantic information across different modalities, which adversely affects the overall clustering accuracy. Unsupervised methods such as contrastive learning and others are struggling to correctly distinguish the true categories of these samples since the absence of prior knowledge.
+The code is coming soon.
 
-An example that with inconsistent semantic information across modalities:
+## Overview
+The implementation of the paper **"Cross-Modal Inconsistency in Clustering: A Confidence-Aware Active Learning Framework"**. 
 
-<img src="https://github.com/shichenhui/CAAL/blob/main/inconsistent_examples.png" width="500px">
+In multimodal data clustering, one commonly overlooked challenge is the presence of **inconsistent semantic information** across different modalities. This inconsistency can significantly affect the overall clustering accuracy. Unsupervised methods, such as contrastive learning, often struggle to correctly distinguish the true categories of these samples due to the lack of prior knowledge.
 
-Challenging samples represent a critical bottleneck for improving accuracy in unsupervised multimodal clustering. These difficult cases include both semantically inconsistent samples with conflicting modal signals that prevent accurate categorization, and samples exhibit low quality in some modalities.
-It is noteworthy that the consistency between a sample's modalities strongly correlates with its discriminability. When a modality exhibits low agreement with other modalities, it typically also demonstrates low confidence. While obtaining modal agreement information is relatively straightforward in unsupervised settings, distinguishing which modalities are correct remains challenging for inconsistent samples.
+## Example of Inconsistent Semantic Information
 
-In this context, providing the model with a limited but strategically selected labeled instances can substantially improve model performance. Therefore, this paper proposes a **Confidence-Aware Active Learning framework (CAAL)** to further boost multimodal clustering.
+Below is an example showcasing inconsistent semantic information across different modalities:
 
+![Inconsistent Examples](https://github.com/shichenhui/CAAL/blob/main/inconsistent_examples.png)
 
+## Challenging Samples: A Critical Bottleneck
+
+Challenging samples represent a critical bottleneck for improving accuracy in unsupervised multimodal clustering. These difficult cases can be divided into two categories:
+
+- **Semantically inconsistent samples**: These samples have conflicting signals across modalities, preventing accurate categorization.
+- **Samples with low-quality modalities**: These exhibit poor quality in some modalities, which further complicates the clustering process.
+
+It is important to note that **modal consistency** strongly correlates with **discriminability**. When a modality exhibits low agreement with others, it typically demonstrates low confidence. Although obtaining modal agreement information is relatively straightforward in unsupervised settings, distinguishing the correct modalities for inconsistent samples remains challenging.
+
+## Proposed Approach
+
+In this context, providing the model with a **limited but strategically selected set of labeled instances** can substantially improve model performance. Therefore, this paper proposes the **Confidence-Aware Active Learning (CAAL)** framework to enhance multimodal clustering.
+
+## Performance Comparison
+
+The table below compares the clustering performance of our method with state-of-the-art techniques:
+
+![Performance Comparison](https://github.com/shichenhui/CAAL/blob/main/accuracy_table.png)
+
+## Confidence Distribution
+
+The figure below shows the distribution of **unlabeled confidence** and **labeled confidence** across five datasets:
+
+![Confidence Distribution](https://github.com/shichenhui/CAAL/blob/main/confidence2.png)
+
+## Conclusion
+
+The confidence distribution in the figure above clearly demonstrates the feasibility and effectiveness of our confidence-aware method. This indicates that the proposed approach has significant **practical application value** in improving the accuracy of unsupervised multimodal clustering.
