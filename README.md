@@ -10,7 +10,7 @@ In multimodal data clustering, one commonly overlooked challenge is the presence
 
 Below is an example showcasing inconsistent semantic information across different modalities:
 
-![Inconsistent Examples](https://github.com/shichenhui/CAAL/blob/main/inconsistent_examples.png)
+<img src="https://github.com/shichenhui/CAAL/blob/main/inconsistent_examples.png" width="400px">
 
 ## Challenging Samples: A Critical Bottleneck
 
@@ -35,8 +35,11 @@ The table below compares the clustering performance of our method with state-of-
 
 The figure below shows the distribution of **unlabeled confidence** and **labeled confidence** across five datasets:
 
-![Confidence Distribution](https://github.com/shichenhui/CAAL/blob/main/confidence2.png)
+<img src="https://github.com/shichenhui/CAAL/blob/main/confidence2.png" width="600px">
+
+The confidence distribution in the figure above clearly demonstrates the feasibility and effectiveness of our confidence-aware method.
 
 ## Conclusion
 
-The confidence distribution in the figure above clearly demonstrates the feasibility and effectiveness of our confidence-aware method. This indicates that the proposed approach has significant **practical application value** in improving the accuracy of unsupervised multimodal clustering.
+The experimental results demonstrate the effectiveness of our method, indicating that it has high practical application value.
+
