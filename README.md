@@ -1,6 +1,6 @@
 # CAAL
 
-The implementation of the paper **"Cross-Modal Inconsistency in Clustering: A Confidence-Aware Active Learning Framework"**. The code is coming soon.
+The code is coming soon.
 
 ## Context
 
